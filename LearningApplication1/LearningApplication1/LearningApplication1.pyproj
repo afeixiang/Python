@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1ae4a787-e4ba-46cf-aa4d-54aba29145a2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>LearningApplication1.py</StartupFile>
+    <StartupFile>LearnPackage1\school24kid.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="LearningApplication1.py" />
+    <Compile Include="LearnPackage1\fibo.py" />
+    <Compile Include="LearnPackage1\school24kid.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LearnPackage1\turtle.py" />
+    <Compile Include="LearnPackage1\xmlTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LearnPackage1\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LearnPackage1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ini.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
