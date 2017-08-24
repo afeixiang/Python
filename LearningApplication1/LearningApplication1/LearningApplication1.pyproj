@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1ae4a787-e4ba-46cf-aa4d-54aba29145a2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>LearnPackage1\school24kid.py</StartupFile>
+    <StartupFile>LearnPackage1\xmlTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
