@@ -48,8 +48,8 @@ def main():
     table = soup.find("table", class_="w3-table w3-bordered w3-striped")
     strs = '{'
     for order_itme in table.find_all('tr', recursive=False):
-        col_name = ['DeliveryDate', ' Amount', ' Student', ' OrderID']
-        #strs = strs + '{'
+        col_name = ['   DeliveryDate', '   Amount', '    Student', '    OrderID']
+        strs = strs + '\n'
         for order_item_content in order_itme.find_all('td', limit=4, recursive=False):
             strs = strs + '' + col_name.pop() + ':' + order_item_content.get_text() + ','
         strs = strs.rstrip(',')
