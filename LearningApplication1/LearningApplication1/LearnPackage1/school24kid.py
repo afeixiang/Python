@@ -11,10 +11,11 @@ def main():
     #from lxml import etree
     from bs4 import BeautifulSoup
     import pprint
+    #import os
 
     #USERNAME = "<USERNAME>"
     #PASSWORD = "<PASSWORD>"
-
+    #print(os.getcwd())
     login_url = "https://www.school24.net.au/ps_parent_dologin.asp"
 
     content_url = "https://www.school24.net.au/ri/psn_oh.asp"
