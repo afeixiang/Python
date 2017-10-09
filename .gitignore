@@ -241,3 +241,6 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /LearningApplication1/LearningApplication1/Output.txt
+ini.json
+Output.txt
+.vscode/launch.json
