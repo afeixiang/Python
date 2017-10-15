@@ -11,11 +11,11 @@ def main():
     #from lxml import etree
     from bs4 import BeautifulSoup
     import pprint
-    #import os
+    import os
 
     #USERNAME = "<USERNAME>"
     #PASSWORD = "<PASSWORD>"
-    #print(os.getcwd())
+    print(os.getcwd())
     login_url = "https://www.school24.net.au/ps_parent_dologin.asp"
 
     content_url = "https://www.school24.net.au/ri/psn_oh.asp"
@@ -24,6 +24,11 @@ def main():
 
     # Get login csrf token
     result = session_requests.get(login_url)
+
+    try:
+        result.raise_for_status()
+    except Exception as exc:
+        print('There was a problem: %s' % (exc))
 
     #Read username and password info from ini.json into payload
     with open('ini.json') as json_data:
@@ -41,6 +46,11 @@ def main():
 
     # get the latest 5 orders from content_url
     result = session_requests.get(content_url, headers=dict(referer=content_url))
+    try:
+        result.raise_for_status()
+    except Exception as exc:
+        print('There was a problem: %s' % (exc))
+
     if result:
         print('-----Get Orderlist OK.-----')
     #parse to soup using beautiful soap
