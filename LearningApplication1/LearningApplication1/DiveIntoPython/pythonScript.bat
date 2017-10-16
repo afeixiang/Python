@@ -1,0 +1,1 @@
+@py.exe \\anglicare-sa.org.au\files\frank.wang\My Documents\Learning\Python\LearningApplication1\LearningApplication1\DiveIntoPython %*

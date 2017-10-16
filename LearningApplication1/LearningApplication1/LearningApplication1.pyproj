@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DiveIntoPython\humansize.py" />
+    <Compile Include="DiveIntoPython\thinkPython.py" />
+    <Compile Include="DiveIntoPython\webScraping.py" />
     <Compile Include="LearningApplication1.py" />
     <Compile Include="LearnPackage1\fibo.py" />
     <Compile Include="LearnPackage1\school24kid.py">
@@ -34,12 +37,45 @@
     <Compile Include="LearnPackage1\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ThinkPython\card.py" />
+    <Compile Include="ThinkPython\countdown.py" />
+    <Compile Include="ThinkPython\drawflower.py" />
+    <Compile Include="ThinkPython\drawPie.py" />
+    <Compile Include="ThinkPython\ex10_15.py" />
+    <Compile Include="ThinkPython\ex13_3.py" />
+    <Compile Include="ThinkPython\ex15_6.py" />
+    <Compile Include="ThinkPython\ex16_1.py" />
+    <Compile Include="ThinkPython\ex19_11.py" />
+    <Compile Include="ThinkPython\First_Turtle_Program.py" />
+    <Compile Include="ThinkPython\FRUITFUNCTION.py" />
+    <Compile Include="ThinkPython\grid.py" />
+    <Compile Include="ThinkPython\kangaroo.py" />
+    <Compile Include="ThinkPython\most_frequent.py" />
+    <Compile Include="ThinkPython\myploygon.py" />
+    <Compile Include="ThinkPython\myTime.py" />
+    <Compile Include="ThinkPython\point_class.py" />
+    <Compile Include="ThinkPython\polygen.py" />
+    <Compile Include="ThinkPython\statics_of_file.py" />
+    <Compile Include="ThinkPython\structshape.py" />
+    <Compile Include="ThinkPython\tabPrint.py" />
+    <Compile Include="ThinkPython\test.py" />
+    <Compile Include="ThinkPython\thinkPythonList.py" />
+    <Compile Include="ThinkPython\time2.py" />
+    <Compile Include="ThinkPython\traversal_string.py" />
+    <Compile Include="ThinkPython\walk_dir.py" />
+    <Compile Include="ThinkPython\word.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DiveIntoPython\" />
     <Folder Include="LearnPackage1\" />
+    <Folder Include="ThinkPython\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DiveIntoPython\pythonScript.bat" />
     <Content Include="ini.json" />
+    <Content Include="ThinkPython\emma.txt" />
+    <Content Include="ThinkPython\thinkPythonDir.txt" />
+    <Content Include="ThinkPython\words.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
