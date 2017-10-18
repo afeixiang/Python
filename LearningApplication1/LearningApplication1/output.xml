@@ -1,13 +1,13 @@
 <Diagram DiagramId="aca99160a55d4799a7dc64b76e6a49bf" Name="Diagram1" ZoomLevel="80">
-        <EntityTypeShape EntityType="DWHBModel.account_dim" IsExpanded="false" PointX="2.5" PointY="1.125" Width="999" />
-        <EntityTypeShape EntityType="DWHBModel.date_dim" IsExpanded="false" PointX="5.625" PointY="4.75" Width="999" />
-        <EntityTypeShape EntityType="DWHBModel.ledger_dim" IsExpanded="false" PointX="11.375" PointY="1.125" Width="999" />
-        <EntityTypeShape EntityType="DWHBModel.portfolio_dim" IsExpanded="false" PointX="7.875" PointY="1.125" Width="999" />
-        <EntityTypeShape EntityType="DWHBModel.program_dim" IsExpanded="false" PointX="13.125" PointY="1.125" Width="999" />
-        <EntityTypeShape EntityType="DWHBModel.service_stream_dim" IsExpanded="false" PointX="9.625" PointY="1.125" Width="999" />
-        <EntityTypeShape EntityType="DWHBModel.program_mapping" FillColor="192, 64, 0" IsExpanded="false" PointX="16" PointY="1.125" Width="999" />
-        <EntityTypeShape EntityType="DWHBModel.accounting_period_dim" IsExpanded="false" PointX="4.125" PointY="1.125" Width="999" />
-        <EntityTypeShape EntityType="DWHBModel.debtor_fact" FillColor="Yellow" IsExpanded="false" PointX="5.75" PointY="3" Width="999" />
+        <EntityTypeShape EntityType="DWHBModel.account_dim" IsExpanded="false" PointX="2.5" PointY="1.125" Width="2.5" />
+        <EntityTypeShape EntityType="DWHBModel.date_dim" IsExpanded="false" PointX="5.625" PointY="4.75" Width="2.5" />
+        <EntityTypeShape EntityType="DWHBModel.ledger_dim" IsExpanded="false" PointX="11.375" PointY="1.125" Width="2.5" />
+        <EntityTypeShape EntityType="DWHBModel.portfolio_dim" IsExpanded="false" PointX="7.875" PointY="1.125" Width="2.5" />
+        <EntityTypeShape EntityType="DWHBModel.program_dim" IsExpanded="false" PointX="13.125" PointY="1.125" Width="2.5" />
+        <EntityTypeShape EntityType="DWHBModel.service_stream_dim" IsExpanded="false" PointX="9.625" PointY="1.125" Width="2.5" />
+        <EntityTypeShape EntityType="DWHBModel.program_mapping" FillColor="192, 64, 0" IsExpanded="false" PointX="16" PointY="1.125" Width="2.5" />
+        <EntityTypeShape EntityType="DWHBModel.accounting_period_dim" IsExpanded="false" PointX="4.125" PointY="1.125" Width="2.5" />
+        <EntityTypeShape EntityType="DWHBModel.debtor_fact" FillColor="Yellow" IsExpanded="false" PointX="5.75" PointY="3" Width="2.5" />
         <AssociationConnector Association="DWHBModel.fk_conform_finance_DEBTOR_FACT_account_key" />
         <AssociationConnector Association="DWHBModel.fk_conform_finance_DEBTOR_FACT_accounting_period_key" />
         <AssociationConnector Association="DWHBModel.fk_conform_finance_DEBTOR_FACT_date_processed_key" />
@@ -16,8 +16,8 @@
         <AssociationConnector Association="DWHBModel.fk_conform_finance_DEBTOR_FACT_portfolio_key" />
         <AssociationConnector Association="DWHBModel.fk_conform_finance_DEBTOR_FACT_program_key" />
         <AssociationConnector Association="DWHBModel.fk_conform_finance_DEBTOR_FACT_service_stream_key" />
-        <EntityTypeShape EntityType="DWHBModel.cost_centre_dim" IsExpanded="false" PointX="6" PointY="1.125" Width="999" />
+        <EntityTypeShape EntityType="DWHBModel.cost_centre_dim" IsExpanded="false" PointX="6" PointY="1.125" Width="2.5" />
         <AssociationConnector Association="DWHBModel.fk_conform_finance_DEBTOR_FACT_cost_centre_key" />
-        <EntityTypeShape EntityType="DWHBModel.kpi_fact" FillColor="Yellow" IsExpanded="false" PointX="8.125" PointY="3" Width="999" />
+        <EntityTypeShape EntityType="DWHBModel.kpi_fact" FillColor="Yellow" IsExpanded="false" PointX="8.125" PointY="3" Width="2.5" />
         <AssociationConnector Association="DWHBModel.fk_conform_finance_kpi_fact_date_key" />
       </Diagram>
