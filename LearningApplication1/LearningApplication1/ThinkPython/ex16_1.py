@@ -1,6 +1,6 @@
 class Time:
     """
-    Represents the time of day.
+    Represents the time of day. Test of change.
 
     attributes: hour, minute, second
     """
