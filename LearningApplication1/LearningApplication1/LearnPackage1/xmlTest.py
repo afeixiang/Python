@@ -9,7 +9,7 @@ def parse_html():
     """
     import requests
     from lxml import html
-    
+
     page = requests.get('http://econpy.pythonanywhere.com/ex/001.html')
     tree = html.fromstring(page.content)
     #This will create a list of buyers:
@@ -35,7 +35,7 @@ def parse_xml():
     entitye_shapes = soup.find_all("entitytypeshape")
     for entity_s in entitye_shapes:
         entity_s['fillcolor'] = 'PPP'
-        entity_s['width'] = '999'        
+        entity_s['width'] = '999'
         print(entity_s.prettify)
 
     file2 = open('tt2.xml','w')
@@ -44,19 +44,30 @@ def parse_xml():
     #close file at the end
     temp_xml_file.close
 
+#xml有namespace的转换成正常可解析的值  有则转换，没有则返回原值
+def ParseNameSpace(src, nsName, nsValue):
+    if src.find(nsName) != -1:
+        dst = src.replace('%s:' % nsName, '{%s}' % nsValue)
+        print 'ns src:%s dst:%s' % (src, dst)
+        return dst
+  
+    return src
+
+
 def parse_xml2():
     """
     using ElementTree
     """
     from xml.etree.ElementTree import ElementTree
     tree = ElementTree()
-    tree.parse("tt.xml")
+    tree.parse("tt2.xml")
     root = tree.getroot()
+    print root.tag
+    for entity_s in root.iter('{http://schemas.microsoft.com/ado/2009/11/edmx}EntityTypeShape'):
+        #entity_s.set('Width','2.5')
+        print entity_s.tag
 
-    for entity_s in root.iter('EntityTypeShape'):
-        entity_s.set('Width','2.5')
-
-    tree.write('output.xml')
+    #tree.write('output.xml')
 
 if __name__ == '__main__':
     parse_xml2()

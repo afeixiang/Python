@@ -55,14 +55,11 @@ class MovieHandler( xml.sax.ContentHandler ):
          self.description = content
 
 if ( __name__ == "__main__"):
-
    # 创建一个 XMLReader
    parser = xml.sax.make_parser()
    # turn off namepsaces
    parser.setFeature(xml.sax.handler.feature_namespaces, 0)
-
    # 重写 ContextHandler
    Handler = MovieHandler()
    parser.setContentHandler( Handler )
-
    parser.parse("movies.xml")
