@@ -43,17 +43,16 @@ def parse_xml():
     file2.close
     #close file at the end
     temp_xml_file.close
-
-#xml有namespace的转换成正常可解析的值  有则转换，没有则返回原值
-def ParseNameSpace(src, nsName, nsValue):
+"""
+def ParseNameSpace(src,nsName,nsValue):
     if src.find(nsName) != -1:
         dst = src.replace('%s:' % nsName, '{%s}' % nsValue)
-        print 'ns src:%s dst:%s' % (src, dst)
+        #print('ns src:%s dst:%s' %) (src, dst)
         return dst
   
     return src
 
-
+"""
 def parse_xml2():
     """
     using ElementTree
@@ -62,10 +61,10 @@ def parse_xml2():
     tree = ElementTree()
     tree.parse("tt2.xml")
     root = tree.getroot()
-    print root.tag
+    print(root.tag)
     for entity_s in root.iter('{http://schemas.microsoft.com/ado/2009/11/edmx}EntityTypeShape'):
         #entity_s.set('Width','2.5')
-        print entity_s.tag
+        print(entity_s.tag)
 
     #tree.write('output.xml')
 
